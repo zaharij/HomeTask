@@ -29,11 +29,11 @@ public class Main {
         int iterationCount = 0;
         int vampireNumbersCount = 0;
 
-        outLoop: for (int i = 11; i <= 99; i++){
+        for (int i = 11; i <= 99; i++){
             for (int j = 99; j >= i; j--){
                 int result = i * j;
                 if (result < 1001){
-                    continue outLoop;
+                    break;
                 } else if (result % 10 == 0){
                     continue;
                 } else {
